@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="stylesheets/style.css" />
+   <title>Markus 2k24</title>
+   <link rel="icon" href="images/logo2.png"  type="image/x-icon"> 
+</head>
+
+<body onmousedown="return false" onselectstart="return false">
+  <script> 
+    document.addEventListener('contextmenu', event=> event.preventDefault()); 
+    document.onkeydown = function(e) { 
+    if(event.keyCode == 123) { 
+    return false; 
+    } 
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){ 
+    return false; 
+    } 
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){ 
+    return false; 
+    } 
+    if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){ 
+    return false; 
+    } 
+    if(e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)){ 
+    return false; 
+    }
+    if(e.ctrlKey && e.keyCode == 'C'.charCodeAt(0)){ 
+    return false; 
+    } 
+    if(e.ctrlKey && e.keyCode == 'V'.charCodeAt(0)){ 
+    return false; 
+    }  
+    } 
+    </script> 
+  <header class="header">
+    <a href="#" class="logo">MARKUS</a>
+    <i class='bx bx-menu' onclick="Toggle()" id="menu-icon"></i>
+    <nav class="navbar" id="nav">
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+        <a href="#events" class="nav-btn">Events</a>
+        <div class="dropdown-content">
+              <a href="techevent.html"><i class='bx bx-code-alt'></i>Technical</a>
+              <a href="nontech.html"><i class='bx bx-trophy'></i>Non-Technical</a>
+        </div>
+      </div>
+      <a href="Team.html">Team</a>
+      <!--<a href="./form.html">Register</a>-->
+      <a href="#footer">Contact</a>
+    </nav>
+  </header>
+  <section class="home" id="home">
+    <div class="home-content" data-aos="fade-right">
+      <h3>Kongu Engineering College</h3>
+      <h3>MSc Software Systems</h3>
+      <h3>Association Of CT-PG</h3>
+      <h2>Proudly Presents</h2>
+      <h1 class="text" data-fill-text="MARKUS 2K24">MARKUS <span style="color: #c7c6c7;">2K24</span></h1>
+      <h2>One Day Intra-College Technical Symposium</h2>
+      <div class="social-media">
+        <a href="https://www.instagram.com/kec._family/?utm_source=qr&r=nametag" target="_blank"><i class='bx bxl-instagram'></i></a>
+        <a href="https://www.linkedin.com/in/kec-msc-ctpg-658616244/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+      </div>
+    </div>
+    <div class="home-img" data-aos="fade-left">
+      <img src="images/logo2.png" alt="logo" class="logo-image" />
+    </div>
+  </section>
+  <section class="events" id="events">
+    <h2 class="heading" data-aos="fade-up">Events</h2>
+    <div class="event-container" data-aos="fade-up" data-aos-delay="100">
+      <div class="event-box">
+        <i class='bx bx-code-alt'></i>
+        <h3>Technical</h3>
+        <p>Join us for our upcoming technical event! Learn and engage in technology. our event offers something for everyone. Mark your calendars and stay tuned for more details!</p>
+        <p>Registration Closed</p>
+        <a href="techevent.html" class="btn">Know More</a>
+      </div>
+      <div class="event-box">
+        <i class='bx bx-code-alt'></i>
+        <h3>Non-Technical</h3>
+        <p>Experience the magic of our community picnic! Join us for a day of fun and friendship at the local park. Bring your favorite snacks and games, and enjoy the sunshine with friends and family</p>
+        <p>Registration Closed</p>
+        <a href="nontech.html" class="btn">Know More</a>
+      </div>
+    </div>
+  </section>
+  <section class="team" id="team">
+    <h2 class="heading" data-aos="fade-up">Our Team</h2>
+    <div class="team-content" data-aos="fade-right">
+      <div class="team-img">
+        <img src="images/team2.png" alt="team">
+      </div>
+      <div class="team-content" data-aos="fade-left">
+        <div>
+          <h3>MARKUS 2K24</h3>
+          <p style="font-size: 2rem;">Step into the world of MARKUS - Where Tech and Passion Unites! Discover our mission, meet the team, and be part of the innovation wave!</p>
+        </div>
+        <a href="Team.html" class="btn">Know More</a>
+      </div>
+    </div>
+  </section>
+  <footer class="footer" id="footer">
+    <div class="followus" data-aos="fade-right" data-aos-offset="100">
+      <h2 class="footer-heading">Follow Us</h2>
+      <div>
+        <div class="social-media-footer">
+          <a href="https://www.instagram.com/kec._family/?utm_source=qr&r=nametag" target="_blank"><i class='bx bxl-instagram'></i></a>
+          <a href="https://www.linkedin.com/in/kec-msc-ctpg-658616244/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="contactus" data-aos="fade-left" data-aos-offset="100">
+      <h2 class="footer-heading">Contact Us</h2>
+      <div class="contactus-content">
+        <p><span>Address</span> : Thoppupalayam, Kumaran Nagar, Perundurai, Tamil Nadu 638060</p>
+        <p><span>Email</span> : associationofctpg@gmail.com</p>
+      </div>
+    </div>
+  </footer>
+  <center><footer>Designed & Developed by Balajisrinath R, Nivetha S, Nandhini S</footer></center>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 300,
+      duration: 750,
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
